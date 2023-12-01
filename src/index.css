@@ -1,0 +1,110 @@
+*{
+    box-sizing : border-box
+}
+
+body{
+    margin : 0;
+}
+
+.main{
+
+}
+
+.container{
+    display : flex;
+    padding : 15px;
+}
+
+.menu,
+.content{
+    width : 100%;
+}
+
+.menu{
+    margin-right : 15px;
+    max-width    : 320px;
+}
+
+.content{
+    max-width  : calc(100% - 320px - 15px);
+    min-height : calc(100dvh - 30px);
+    padding    : 1.25rem
+}
+
+.page-title{
+    margin-top : 0;
+}
+
+.block{
+    border        : 2px solid rgba(169, 187, 255, 0.5);
+    border-radius : 5px;
+}
+
+.p-tree{
+    border : none;
+    height : 100%;
+}
+
+.p-tree-container{
+    max-height : calc(100dvh - 30px - 1.25rem - 80px);
+    overflow-x : hidden;
+}
+
+.p-component-overlay{
+    background-color : rgba(169, 187, 255, 0.5);
+}
+
+.flex{
+    display : flex
+}
+
+.justify-content-center{
+    justify-content : center;
+}
+
+.flex-column{
+    align-items    : center;
+    flex-direction : column;
+    gap            : 15px;
+}
+
+.form-add-client{
+    border        : 1px solid rgba(169, 187, 255, 0.5);
+    border-radius : 5px;
+    max-width     : 320px;
+    padding       : 15px;
+    position      : relative;
+    width         : 100%;
+}
+
+.form-preloader{
+    align-content    : center;
+    background-color : rgba(169, 187, 255, 0.5);
+    border-radius    : 5px;
+    bottom           : 0;
+    display          : flex;
+    justify-content  : center;
+    left             : 0;
+    position         : absolute;
+    right            : 0;
+    top              : 0;
+}
+
+.clients-wrapper{
+    margin-top : 50px;
+}
+
+.clients{
+    display    : flex;
+    flex-wrap  : wrap;
+    list-style : none;
+    margin     : 15px 0 0;
+    padding    : 0;
+}
+
+.client-card{
+    margin    : 7.5px;
+    max-width : calc(100% / 3 - 15px);
+    min-width : 250px;
+    width     : 100%;
+}
